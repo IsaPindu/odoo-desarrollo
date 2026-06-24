@@ -21,9 +21,9 @@ class AccountChartTemplate(models.AbstractModel):
             "code_digits": "10",
             "currency_id": "base.PYG",
             "country_id": "base.py",
-            "bank_account_code_prefix": "1-01-01-03",
-            "cash_account_code_prefix": "1-01-01-01",
-            "transfer_account_code_prefix": "1-01-01-02",
+            "bank_account_code_prefix": "1.01.01.03",
+            "cash_account_code_prefix": "1.01.01.01",
+            "transfer_account_code_prefix": "1.01.01.02",
         }
 
     @template("py_dnit", "res.company")
@@ -31,9 +31,9 @@ class AccountChartTemplate(models.AbstractModel):
         return {
             self.env.company.id: {
                 "account_fiscal_country_id": "base.py",
-                "bank_account_code_prefix": "1-01-01-03",
-                "cash_account_code_prefix": "1-01-01-01",
-                "transfer_account_code_prefix": "1-01-01-02",
+                "bank_account_code_prefix": "1.01.01.03",
+                "cash_account_code_prefix": "1.01.01.01",
+                "transfer_account_code_prefix": "1.01.01.02",
                 "account_default_pos_receivable_account_id": "dnit_1010301",
                 "account_sale_tax_id": "dnit_tax_iva_10_venta",
                 "account_purchase_tax_id": "dnit_tax_iva_10_compra",
