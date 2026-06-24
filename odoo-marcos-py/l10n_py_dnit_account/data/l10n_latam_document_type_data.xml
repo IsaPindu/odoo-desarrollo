@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="dc_factura" model="l10n_latam.document.type">
+        <field name="name">Factura</field>
+        <field name="code">1</field>
+        <field name="doc_code_prefix">FE</field>
+        <field name="internal_type">invoice</field>
+        <field name="country_id" ref="base.py"/>
+    </record>
+
+    <record id="dc_autofactura" model="l10n_latam.document.type">
+        <field name="name">Autofactura</field>
+        <field name="code">4</field>
+        <field name="doc_code_prefix">AF</field>
+        <field name="internal_type">invoice</field>
+        <field name="country_id" ref="base.py"/>
+    </record>
+
+    <record id="dc_nota_credito" model="l10n_latam.document.type">
+        <field name="name">Nota de Crédito</field>
+        <field name="code">5</field>
+        <field name="doc_code_prefix">NC</field>
+        <field name="internal_type">credit_note</field>
+        <field name="country_id" ref="base.py"/>
+    </record>
+
+    <record id="dc_nota_debito" model="l10n_latam.document.type">
+        <field name="name">Nota de Débito</field>
+        <field name="code">6</field>
+        <field name="doc_code_prefix">ND</field>
+        <field name="internal_type">debit_note</field>
+        <field name="country_id" ref="base.py"/>
+    </record>
+
+    <record id="dc_nota_remision" model="l10n_latam.document.type">
+        <field name="name">Nota de Remisión</field>
+        <field name="code">7</field>
+        <field name="doc_code_prefix">NR</field>
+        <field name="internal_type">invoice</field>
+        <field name="country_id" ref="base.py"/>
+    </record>
+
+</odoo>

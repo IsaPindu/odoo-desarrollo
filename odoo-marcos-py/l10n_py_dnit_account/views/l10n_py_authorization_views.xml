@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_l10n_py_authorization_list" model="ir.ui.view">
+        <field name="name">l10n.py.authorization.list</field>
+        <field name="model">l10n.py.authorization</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="document_type_id"/>
+                <field name="establishment"/>
+                <field name="expedition_point"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <field name="sequence_number_next"/>
+                <field name="state" decoration-success="state == 'valid'"
+                       decoration-danger="state == 'expired'" widget="badge"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_l10n_py_authorization_form" model="ir.ui.view">
+        <field name="name">l10n.py.authorization.form</field>
+        <field name="model">l10n.py.authorization</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" string="Timbrado"/>
+                        <h1><field name="name" placeholder="12345678"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="document_type_id"/>
+                            <field name="establishment"/>
+                            <field name="expedition_point"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                        <group>
+                            <field name="date_from"/>
+                            <field name="date_to"/>
+                            <field name="number_from"/>
+                            <field name="number_to"/>
+                            <field name="sequence_number_next"/>
+                            <field name="state"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_l10n_py_authorization" model="ir.actions.act_window">
+        <field name="name">Timbrados</field>
+        <field name="res_model">l10n.py.authorization</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_l10n_py_authorization"
+              name="Timbrados"
+              parent="account.menu_finance_configuration"
+              action="action_l10n_py_authorization"
+              sequence="90"/>
+
+</odoo>

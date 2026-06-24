@@ -1,0 +1,44 @@
+<section style="font-family:-apple-system,Segoe UI,Roboto,sans-serif;color:#1f2d3d;max-width:920px;margin:0 auto;padding:24px">
+  <div style="text-align:center;padding:32px 0 24px">
+    <h1 style="font-size:34px;margin:0 0 8px">Paraguay · Plan de Cuentas DNIT</h1>
+    <p style="font-size:18px;color:#5a6b7b;margin:0">
+      Plan de cuentas e impuestos para Odoo 19, según el Modelo de Estados
+      Financieros de la DNIT.
+    </p>
+  </div>
+
+  <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;margin:24px 0">
+    <div style="flex:1;min-width:160px;background:#f6f8fa;border-radius:10px;padding:18px;text-align:center">
+      <div style="font-size:30px;font-weight:700;color:#0038a8">30</div>
+      <div style="color:#5a6b7b">grupos jerárquicos</div>
+    </div>
+    <div style="flex:1;min-width:160px;background:#f6f8fa;border-radius:10px;padding:18px;text-align:center">
+      <div style="font-size:30px;font-weight:700;color:#0038a8">81</div>
+      <div style="color:#5a6b7b">cuentas contables</div>
+    </div>
+    <div style="flex:1;min-width:160px;background:#f6f8fa;border-radius:10px;padding:18px;text-align:center">
+      <div style="font-size:30px;font-weight:700;color:#d52b1e">IVA 10 / 5 / Exento</div>
+      <div style="color:#5a6b7b">venta y compra</div>
+    </div>
+  </div>
+
+  <h2 style="border-bottom:2px solid #eee;padding-bottom:6px">Qué incluye</h2>
+  <ul style="font-size:16px;line-height:1.7">
+    <li>Estructura de cuentas y grupos fiel al formulario oficial (Activo, Pasivo, Patrimonio Neto y Estado de Resultado).</li>
+    <li>Impuestos IVA 10%, 5% y exento para ventas y compras, con débito y crédito fiscal.</li>
+    <li>Nueve posiciones fiscales de compra y venta según la clasificación de la SET.</li>
+    <li>Cuentas por defecto de la compañía: cliente, impuestos y diferencia de cambio.</li>
+  </ul>
+
+  <h2 style="border-bottom:2px solid #eee;padding-bottom:6px">Códigos fieles a la DNIT</h2>
+  <pre style="background:#1f2d3d;color:#e6edf3;padding:16px;border-radius:8px;overflow:auto">1-              ACTIVO
+1-01-           ACTIVO CORRIENTE
+1-01-01-        DISPONIBILIDADES
+1-01-01-01      CAJA</pre>
+
+  <p style="color:#5a6b7b">
+    Registra el plan con código <code>py_dnit</code>, por lo que convive con otras
+    localizaciones paraguayas. El plan se selecciona manualmente en la configuración
+    contable.
+  </p>
+</section>

@@ -1,0 +1,4 @@
+"id","name","country_id","sequence","name@es"
+"dnit_tax_group_iva_10","IVA 10%","base.py","1","IVA 10%"
+"dnit_tax_group_iva_5","IVA 5%","base.py","2","IVA 5%"
+"dnit_tax_group_exento","Exento","base.py","3","Exento"
