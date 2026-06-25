@@ -34,9 +34,16 @@ class AccountChartTemplate(models.AbstractModel):
                 "bank_account_code_prefix": "1.01.01.03",
                 "cash_account_code_prefix": "1.01.01.01",
                 "transfer_account_code_prefix": "1.01.01.02",
+                
+                # ESTAS SÍ QUEDAN: Mapean automáticamente las cuentas al crear contactos nuevos
+                "property_account_receivable_id": "dnit_1010301",
+                "property_account_payable_id": "dnit_1010301", 
                 "account_default_pos_receivable_account_id": "dnit_1010301",
+                
                 "account_sale_tax_id": "dnit_tax_iva_10_venta",
                 "account_purchase_tax_id": "dnit_tax_iva_10_compra",
+                
+                # ESTAS SE REVIERTEN: Volvemos a las originales de ganancias y pérdidas por diferencia de cambio
                 "income_currency_exchange_account_id": "dnit_31003",
                 "expense_currency_exchange_account_id": "dnit_414",
             },
